@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="153dp"
+        android:layout_height="247dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/syrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chocolate syrup" />
+
+        <CheckBox
+            android:id="@+id/sprinkles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sprinkles" />
+
+        <CheckBox
+            android:id="@+id/nuts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkBox"
+            android:text="Crushed nuts" />
+
+        <CheckBox
+            android:id="@+id/cherries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkBox"
+            android:text="Cherries" />
+
+        <CheckBox
+            android:id="@+id/orio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkBox"
+            android:text="Orio cookies crumbles" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="SHOW TOAST"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</androidx.constraintlayout.widget.ConstraintLayout>
